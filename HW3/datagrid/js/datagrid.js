@@ -1,7 +1,3 @@
-/**
- * Created by Jiati Le on 2/14/16.
- * Andrew ID: jiatil
- */
 //reference: http://www.w3schools.com/js/js_htmldom_eventlistener.asp
 // http://www.w3schools.com/jsref/dom_obj_table.asp
 // http://www.w3schools.com/jsref/prop_html_innerhtml.asp

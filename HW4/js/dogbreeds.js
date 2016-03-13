@@ -1,6 +1,4 @@
 /**
- * Created by Jiati Le on 2/22/16.
- * Andrew ID: jiatil
  */
 //http://api.jquery.com/jquery.getjson/
 (function (){
