@@ -1,0 +1,170 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+body {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+header {
+    background-color: rgb(100,100,100);
+    width: 100%;
+    text-align: center;
+    order: 1;
+    -webkit-order: 1;
+}
+main {
+    background-color: rgb(220,220,220);
+    -webkit-order: 3;
+    order: 3;
+    width: 75%;
+}
+main>* {
+    padding: 0.5em;
+}
+div.reading-dog {
+    background: rgb(220, 220, 220) url("reading_dog.jpg") no-repeat 0% 0%;
+    background-clip: content-box;
+    overflow: hidden;
+}
+h1 {
+    font-size: 200%;
+    color: white !important;
+}
+h2 {
+    font-size: 150%;
+    color: rgb(185,85,25);
+}
+table {
+    border-collapse: collapse;
+}
+tbody td, tbody tr {
+    border: 1px solid rgb(184,204,228);
+    padding: 0.5em;
+}
+th {
+    background: linear-gradient(180deg, rgb(100,100,100), rgb(0,0,0));
+    color: white;
+    text-align: left;
+    border: 1px solid rgb(184,204,228);
+    padding: 0.5em;
+}
+tbody>tr>td:nth-child(1) {
+    text-align: left;
+}
+tbody>tr>td:nth-child(2) {
+    text-align: left;
+}
+tbody>tr>td:nth-child(3) {
+    text-align: right;
+}
+tbody>tr>td:nth-child(4) {
+    text-align: right;
+}
+tbody>tr:nth-child(odd) {
+    background-color: rgb(197, 217, 241);
+}
+tbody>tr:nth-child(even) {
+    background-color: white;
+}
+tbody>tr:hover {
+    background-color: rgb(255,255,0);
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+#section-quoteoftheday>blockquote>p {
+    font-style: italic;
+}
+nav>ul>li {
+    padding: 0.5em;
+    list-style: none;
+}
+cite>a {
+    text-decoration: none;
+    color: rgb(0,0,255);
+}
+td>a {
+    text-decoration: none;
+    color: rgb(0,0,255);
+}
+li>a {
+    text-decoration: none;
+    color: black;
+}
+td>a:active {
+    text-decoration: none;
+    color: rgb(0,0,255);
+}
+cite>a:active {
+    text-decoration: none;
+    color: rgb(0,0,255);
+}
+cite>a:visited {
+    color: rgb(0,0,255);
+}
+td>a:visited {
+    color: rgb(0,0,255);
+}
+li>a:visited {
+    color: black;
+}
+cite>a:hover {
+    text-decoration: underline;
+}
+td>a:hover {
+    text-decoration: underline;
+}
+li>a:hover {
+    text-decoration: underline;
+    color: white;
+}
+.required {
+    color: red;
+}
+form {
+    padding: 0.5em;
+}
+fieldset>div {
+    padding: 0.5em;
+}
+fieldset>input {
+    background-color: rgb(100, 100, 100);
+    color: white;
+    padding: 0.5em;
+}
+#select-howheard {
+    border: 1px solid;
+}
+footer {
+    background-color: rgb(100,100,100);
+    text-align: center;
+    width: 100%;
+    order: 5;
+    -webkit-order: 4;
+    padding: 0.5em;
+    color: white;
+}
+nav {
+    -webkit-order: 2;
+    order: 2;
+    background-color: rgb(180,180,180);
+    width: 25%;
+}
+@media screen and (max-width: 600px){
+    nav {
+        width: 100%;
+        background-color: rgb(180,180,180);
+        order: 4;
+        -webkit-order: 4;
+        padding: 0.5em;
+    }
+    main {
+        background-color: rgb(220,220,220);
+        width: 100%;
+        -webkit-order: 3;
+        order: 3;
+        padding: 0.5em;
+    }
+}

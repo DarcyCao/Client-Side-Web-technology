@@ -1,0 +1,53 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+table {
+    border-collapse: collapse;
+}
+
+.enable {
+    float: right;
+    color: #0000FF;
+}
+
+#printpage {
+    color: black;
+}
+
+.disable {
+    float: right;
+    color: rgb(180,180,180);
+}
+
+thead {
+    background: linear-gradient(180deg, white, rgb(180,180,180));
+    text-align: left;
+    color: black;
+}
+
+tr, td, th {
+    border: 1px solid rgb(100,100,100);
+    padding: 0.5em;
+}
+
+thead th {
+    color: black;
+}
+
+thead th:hover {
+    color: blue;
+}
+.toclick {
+    cursor: pointer;
+}
+tbody tr:nth-child(odd) {
+    background-color: rgb(255,255,255);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(200,200,200);
+}
+
+.sortproperty {
+    background-color: rgba(0,130,180,0.2);
+}
