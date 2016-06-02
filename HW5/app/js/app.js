@@ -99,9 +99,6 @@
                 $location.path('/contact')
             };
             var lskey = localStorageService.keys();
-            //for (var key in lskey) {
-            //    $scope.submittedAddresses.push(localStorageService.get(key));
-            //}
             for (var i = 0; i < lskey.length; i++) {
                 var key = lskey[i];
                 $scope.submittedAddresses.push(localStorageService.get(key));
@@ -115,26 +112,11 @@
             $scope.change = function(index) {
                 var keys = localStorageService.keys();
                 var key = keys[index];
-                //localStorageService.remove(key);
-                //$scope.submittedAddresses.splice(index, 1);
                 $location.path('/contact/' + key);
             }
         })
         .controller('contactController', function ($scope, localStorageService, $routeParams, $location) {
             $scope.stateOptions = usStates; //Available via closure
-            //var id = $routeParams.id;
-            //if (isNaN(id)) {
-            //    $scope.address = {};
-            //    var keys = localStorageService.keys();
-            //    if (keys.length > 0) {
-            //        $scope.id = keys.length;
-            //    } else {
-            //        $scope.id = 0;
-            //    }
-            //} else {
-            //    var keys = localStorageService.keys();
-            //    $scope.address = localStorageService.get(keys[id]);
-            //}
             var name = $routeParams.id;
             if (typeof (name) == 'undefined') {
                 $scope.address = {};
