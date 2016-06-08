@@ -19,6 +19,7 @@ function DataGrid(inputoption) {
 (function () {
 
     DataGrid.prototype.printtable = function(page) {
+        this.
         this.destroy();
         if (typeof(this.onRender) !== 'undefined') {
             var sefl = this;
